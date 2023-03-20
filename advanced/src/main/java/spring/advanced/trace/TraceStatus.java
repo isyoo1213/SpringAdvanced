@@ -1,4 +1,4 @@
-package spring.advanced.app.trace;
+package spring.advanced.trace;
 
 /**
  * 로그 시작/종료시 필요한 요소들 + 작업 시간 계산에 필요한 정보들을 담은 클래스

@@ -2,8 +2,8 @@ package spring.advanced.app.v1;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
-import spring.advanced.app.trace.TraceStatus;
-import spring.advanced.app.trace.myTrace.MyTraceV1;
+import spring.advanced.trace.TraceStatus;
+import spring.advanced.trace.myTrace.MyTraceV1;
 
 @Repository
 @RequiredArgsConstructor

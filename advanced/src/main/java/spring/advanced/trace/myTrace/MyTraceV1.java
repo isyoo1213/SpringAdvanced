@@ -1,9 +1,9 @@
-package spring.advanced.app.trace.myTrace;
+package spring.advanced.trace.myTrace;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
-import spring.advanced.app.trace.TraceId;
-import spring.advanced.app.trace.TraceStatus;
+import spring.advanced.trace.TraceId;
+import spring.advanced.trace.TraceStatus;
 
 @Slf4j
 @Component //SpringBean 등록을 통해 Singleton으로 사용하기 위해
