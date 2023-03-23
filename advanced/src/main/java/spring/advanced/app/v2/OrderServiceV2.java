@@ -26,7 +26,7 @@ public class OrderServiceV2 {
 
         try {
             //beginSync() 사용
-            status = tracer.beginSync(beforeTraceId, "OrderServiceV1.orderItem()");
+            status = tracer.beginSync(beforeTraceId, "OrderServiceV2.orderItem()");
 
             //Repository로 넘겨줄 traceId 처리
             orderRepository.save(status.getTraceId(), itemId);

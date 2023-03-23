@@ -18,7 +18,7 @@ public class OrderRepositoryV3 {
         TraceStatus status = null;
         try {
             //beginSync() 사용
-            status = tracer.begin("OrderRepositoryV1.save()");
+            status = tracer.begin("OrderRepositoryV3.save()");
 
             //저장 로직 - 상황만 가정 -> 상품을 저장할 때는 1초 정도의 시간이 걸리고, Exception 발생할 경우 예외를 던짐
             if (itemId.equals("ex")) {

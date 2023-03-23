@@ -19,7 +19,7 @@ public class OrderControllerV2 {
 
         TraceStatus status = null; //catch 블럭에서도 status를 사용할 수 있도록 scope를 try 블럭 밖으로 확장시키는 위치
         try {
-            status = tracer.begin("OrderControllerV1.request()");
+            status = tracer.begin("OrderControllerV2.request()");
             orderService.orderItem(status.getTraceId(), itemId);
             tracer.end(status);
             return "ok";
