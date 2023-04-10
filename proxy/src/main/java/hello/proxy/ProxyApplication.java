@@ -5,6 +5,7 @@ import hello.proxy.config.AppV2Config;
 import hello.proxy.config.v1_proxy.ConcreteProxyConfig;
 import hello.proxy.config.v1_proxy.InterfaceProxyConfig;
 import hello.proxy.config.v2_dynamicproxy.DynamicProxyBasicConfig;
+import hello.proxy.config.v2_dynamicproxy.DynamicProxyFilterConfig;
 import hello.proxy.trace.logtrace.LogTrace;
 import hello.proxy.trace.logtrace.ThreadLocalLogTrace;
 import org.springframework.boot.SpringApplication;
@@ -20,7 +21,8 @@ import org.springframework.context.annotation.Import;
  *     - AppVX.class를 바꿔가며 해당 클래스와 내부 @Bean들을 Bean 등록하기 위해 @ComponentScan 대상 패키지를 좁힘
  *     - default는 @SpringBootApplcation이 붙은 ProxyApplication.class가 속한 패키지 hello.proxy와 그 하위
  */
-@Import({DynamicProxyBasicConfig.class, ConcreteProxyConfig.class})
+@Import({DynamicProxyFilterConfig.class, ConcreteProxyConfig.class})
+//@Import({DynamicProxyBasicConfig.class, ConcreteProxyConfig.class})
 //@Import({InterfaceProxyConfig.class, ConcreteProxyConfig.class})
 //@Import(InterfaceProxyConfig.class)
 //@Import({AppV1Config.class, AppV2Config.class})
